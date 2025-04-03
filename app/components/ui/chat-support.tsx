@@ -146,7 +146,7 @@ export function ChatSupport() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="bg-white rounded-xl shadow-xl p-4 mb-4 w-72"
+              className="bg-white rounded-xl shadow-xl p-4 mb-4 w-[85vw] sm:w-72 max-w-[300px]"
             >
               <div className="text-center mb-4">
                 <h3 className="text-lg font-semibold text-gray-800">
@@ -185,8 +185,11 @@ export function ChatSupport() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="bg-white rounded-xl shadow-xl mb-4 w-96 md:w-[450px] overflow-hidden flex flex-col"
-              style={{ height: "700px" }}
+              className="bg-white rounded-xl shadow-xl mb-4 w-[85vw] sm:w-96 md:w-[450px] overflow-hidden flex flex-col fixed bottom-20 right-0 sm:right-6 sm:bottom-auto sm:relative"
+              style={{
+                height: "calc(100vh - 160px)",
+                maxHeight: "700px",
+              }}
             >
               {/* Header */}
               <motion.div
