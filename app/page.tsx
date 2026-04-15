@@ -7,7 +7,6 @@ import { Navbar } from "./components/sections/navbar";
 import { PricingSection } from "./components/sections/pricing";
 import { TestimonialsSection } from "./components/sections/testimonials";
 import { ChatSupport } from "./components/ui/chat-support";
-import { DemoNoticePopup } from "./components/ui/demo-notice-popup";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <ContactSection />
       <Footer />
       <ChatSupport />
-      <DemoNoticePopup />
     </main>
   );
 }
